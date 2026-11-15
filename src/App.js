@@ -1,6 +1,6 @@
 import './styles/App.css'
 import { BrowserRouter } from 'react-router-dom';
-import Navbar from './Components/Navbar/NavbarSetColor/NavbarSetColor';
+import Navbar from './Components/Navbar/NavbarBase/NavbarBase';
 import AppRouter from './Components/AppRouter';
 import Footer from './Components/Footer/Footer';
 import ScrollToTop from './Components/UI/ScrollToTop';

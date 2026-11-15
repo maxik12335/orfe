@@ -13,7 +13,7 @@ const MobileMenu = () => {
     <div>
 
       <div className={classes.burgerBox}>
-        <p className="text-base">clear web</p>
+        <p className="text-base">orfe</p>
         <Burger onClick={() => setIsOpen(true)} />
       </div>
 

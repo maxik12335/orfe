@@ -6,10 +6,10 @@
   padding: 20px 0;
   transition: var(--transition-long);
   z-index: 999;
-  color: var(--color-text);
-  background: color-mix(in srgb, var(--color-background) 8%, transparent);
-  /* backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);  */
+  color: var(--color-text-accent);
+  background: color-mix(in srgb, var(--color-background) 48%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); 
 }
 
 .desctopMenu {

@@ -65,6 +65,10 @@
   transition: var(--transition-base);
 }
 
+.color-accent {
+  color: var(--color-text-accent);
+}
+
 .arrow-rotate {
   transform: rotate(45deg);
 }
@@ -93,7 +97,7 @@
 
 .container {
   max-width: 1140px;
-  padding: 100px 20px;
+  padding: 150px 20px;
   margin: 0 auto;
   min-height: 100vh;
 

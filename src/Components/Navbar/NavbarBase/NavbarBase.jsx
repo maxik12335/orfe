@@ -13,11 +13,11 @@ const NavbarBase = () => {
       <div className="container-navbar">
 
         <div className={classes.desctopMenu}>
-          <p className="text-base">Балкон 71</p>
+          <h2 className="h2">orfe</h2>
 
           <div className={classes.menu}>
             {NAV_LINKS.map(link => (
-              <NavLink key={link.to} className="text-base hover" to={link.to}>
+              <NavLink key={link.to} className="text-sm hover" to={link.to}>
                 {link.label}
               </NavLink>
             ))}
