@@ -1,3 +1,61 @@
+export const FORM_TEXTS = {
+  ru: {
+    name: 'Имя *',
+    email: 'E-mail *',
+    phone: '+7 999 999 99 99',
+    message: 'Опишите ваш запрос или задачу',
+    submit: 'Отправить',
+    thanks: { title: 'Спасибо !', body: 'вам ответят в ближайшее время' },
+    errors: {
+      name: 'введите имя',
+      email: 'некорректный email',
+      phone: 'введите номер',
+      message: 'напишите чуть подробнее',
+    },
+  },
+  en: {
+    name: 'Name *',
+    email: 'E-mail *',
+    phone: '+7 999 999 99 99',
+    message: 'Describe your request',
+    submit: 'Send',
+    thanks: { title: 'Thank you!', body: 'we will get back to you soon' },
+    errors: {
+      name: 'enter your name',
+      email: 'invalid email',
+      phone: 'enter your phone',
+      message: 'please add more details',
+    },
+  },
+};
+
+// email: обрезаем пробелы и запрещаем пробелы внутри
+export const formatEmail = (raw) => {
+  return raw.replace(/\s/g, '').slice(0, 50);
+};
+
+
+export const validateContacts = (values, lang = 'ru') => {
+  const errors = { name: '', email: '', phone: '', message: '' };
+  const e = FORM_TEXTS[lang].errors;
+
+  if (values.name && values.name.trim().length < 2) errors.name = e.name;
+
+  if (values.email) {
+    if (!/^\S+@\S+\.\S+$/.test(values.email)) errors.email = e.email;
+  }
+
+  if (values.phone) {
+    const digits = values.phone.replace(/\D/g, '');
+    if (digits.length < 11) errors.phone = e.phone;
+  }
+
+  if (values.message && values.message.trim().length < 5) errors.message = e.message;
+
+  return errors;
+};
+
+
 // телефон: только цифры, всегда формат +7 XXX XXX XX XX
 export const formatPhone = (raw) => {
   let digits = raw.replace(/\D/g, '');

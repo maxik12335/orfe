@@ -1,7 +1,65 @@
+.texts {
+  margin: 100px 0;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+h3 {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.texts h1 {
+  color: var(--color-text-accent);
+}
+
+.listBox {
+  display: grid;
+  gap: var(--space-8);
+  text-transform: lowercase;
+  padding: var(--space-8) var(--space-4);
+  background-color: var(--color-text-accent);
+  color: var(--color-background);
+}
+
+/* для синий темы */
+/* .listBox {
+  background-color: #142a5b;
+  color: var(--color-text);
+} */
+
+.listBox span {
+  display: block;
+
+}
+
+.list {
+  display: grid;
+  gap: var(--space-1);
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* планшет */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-2);
+  }
+}
 
 @media (max-width: 768px) {}
 
 /* телефон */
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  .texts {
+    align-items: flex-start;
+  }
+
+  .listBox {
+    padding: var(--space-8) var(--space-2);
+  }
+}

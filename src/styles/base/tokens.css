@@ -1,11 +1,26 @@
 :root {
-  /* цвета */
+  /* base (светлая) */
   --color-background: #f7f7f7;
   --color-text: #1A1A1A;
   --color-text-accent: #002f98;
-  --color-background-dark: #1A1A1A;
-  --color-text-dark: #f7f7f7;
+  --color-background-btn: #002f98;
+  --color-text-btn: #f7f7f7;
+  --color-background-input: #f7f7f7;
+  --color-text-input: #1A1A1A;
+}
 
+/* blue (тёмно-синяя) */
+:root[data-theme='blue'] {
+  --color-background: #002f98;
+  --color-text: #f7f7f7;
+  --color-text-accent: #f7f7f7;
+  --color-background-btn: #142a5b;
+  --color-text-btn: #f7f7f7;
+  --color-background-input: #142a5b;
+  --color-text-input: #f7f7f7;
+}
+
+:root {
   /* hover */
   --color-hover-opacity: 0.7;
   --line-border-bottom: 1px solid rgba(26, 26, 26, 0.05);
@@ -19,7 +34,7 @@
   --text-size-h2: 32px; 
   --text-size-h3: 24px; 
   --text-size-base: 18px; 
-  --text-size-small: 16px; 
+  --text-size-small: 14px; 
 
   /* font-weight */
   --text-weight-main-title: 700;

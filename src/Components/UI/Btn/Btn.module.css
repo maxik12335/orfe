@@ -19,9 +19,15 @@
 }
 
 .dark {
-  background-color: var(--color-background-dark);
-  color: var(--color-background);
+  background-color: var(--color-background-btn);
+  color: var(--color-text-btn);
 }
+
+/* для синий темы */
+/* .dark {
+  background-color: #142a5b;
+  color: var(--color-text);
+} */
 
 .light {
   background-color: var(--color-background);

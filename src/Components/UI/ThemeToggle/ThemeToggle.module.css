@@ -1,0 +1,27 @@
+.toggle {
+  width: 44px;
+  height: 24px;
+  border-radius: 24px;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+  background: var(--color-background-btn); /* трек в цвет кнопки — впишется в обе темы */
+  position: relative;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* кружок внутри */
+.knob {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-text-btn);
+  transition: transform 0.3s ease;
+}
+
+/* в тёмной (blue) теме кружок уезжает вправо */
+.toggle[aria-checked='true'] .knob {
+  transform: translateX(20px);
+}

@@ -1,7 +1,92 @@
+.content {
+  /* margin-top: var(--space-8); */
+}
+
+.subtitle {
+  margin: 100px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+  text-align: left;
+  padding: var(--space-4);  
+}
+
+.item:nth-child(2),
+.item:nth-child(3),
+.item:nth-child(6) {
+  background-color: var(--color-text-accent);
+  color: var(--color-background);
+}
+
+.item h3 {
+  margin-bottom: var(--space-6);
+}
+
+
+
+.modlList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  max-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: var(--space-8);
+  gap: var(--space-4);
+}
+
 /* планшет */
 @media (max-width: 992px) {}
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .subtitle {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .item:nth-child(1) {
+    background-color: var(--color-text-accent);
+    color: var(--color-background);
+  }
+
+  .item:nth-child(2) {
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+
+  .item:nth-child(3) {
+    background-color: var(--color-text-accent);
+    color: var(--color-background);
+  }
+
+  .item:nth-child(4) {
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+
+  .item:nth-child(5) {
+    background-color: var(--color-text-accent);
+    color: var(--color-background);
+  }
+
+  .item:nth-child(6) {
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+}
 
 /* телефон */
 @media (max-width: 576px) {}

@@ -6,7 +6,8 @@ const Shop = () => {
       <div className="container">
 
         <div className="content">
-          <h2 className='h2 line-dark-text'>магазин</h2>
+          <h2 className='h2 line-dark-text color-accent'>магазин</h2>
+          <p className='text-base'>Страница в разработе</p>
         </div>
 
       </div>

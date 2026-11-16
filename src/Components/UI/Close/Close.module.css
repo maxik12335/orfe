@@ -7,16 +7,16 @@
   position: relative;
   margin-left: auto;
   cursor: pointer;
-  /* position: absolute;
+  position: absolute;
   right: var(--space-3);
-  top: var(--space-3); */
+  top: var(--space-3);
 }
 
 .close span {
   width: 100%;
   height: 1px;
   position: absolute;
-  background-color: var(--color-background-dark);
+  background-color: var(--color-text);
 }
 
 .close span:first-child {

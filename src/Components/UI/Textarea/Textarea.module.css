@@ -1,0 +1,31 @@
+.input {
+  padding: var(--space-1) var(--space-2);
+  border: none;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-input);
+  background-color: var(--color-background-input);
+}
+
+textarea.input {
+  resize: vertical; /* можно тянуть только по высоте */
+  min-height: 100px; /* минимальная высота */
+  padding: 12px;     /* чуть больше отступы */
+}
+
+.input:focus {
+  box-shadow: var(--shadow-md);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.input.error {
+  box-shadow: 0 0px 8px rgba(255, 0, 0, 0.3);
+}
+
+.errorText {
+  color: var(--color-danger, #e5484d);
+}

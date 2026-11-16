@@ -6,7 +6,8 @@ const Blog = () => {
       <div className="container">
 
         <div className="content">
-          <h2 className='h2 line-dark-text'>Блог</h2>
+          <h2 className='h2 line-dark-text color-accent'>блог</h2>
+          <p className='text-base'>Страница в разработе</p>
         </div>
 
       </div>

@@ -3,8 +3,15 @@
   border: none;
   box-shadow: var(--shadow-sm);
   border-radius: var(--radius-sm);
-  color: var(--color-background-dark);
+  color: var(--color-text-input);
+  background-color: var(--color-background-input);
 }
+
+/* для синий темы */
+/* .input {
+  background-color: #142a5b;
+  color: var(--color-text);
+} */
 
 .input:focus {
   box-shadow: var(--shadow-md);

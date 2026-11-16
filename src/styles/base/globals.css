@@ -1,11 +1,13 @@
 .section {
+  /* background-color: var(--color-text-accent);
+  color: var(--color-background); */
   background-color: var(--color-background);
   color: var(--color-text);
 }
 
 .section::selection {
-  background-color: var(--color-background-dark);
-  color: var(--color-text-dark);
+  background-color: var(--color-text-btn);
+  color: var(--color-background);
 }
 
 .section--dark {
@@ -15,7 +17,7 @@
 
 .section--dark::selection {
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--color-text-accent);
 }
 
 .section-video {
@@ -38,7 +40,7 @@
 }
 
 .line-dark {
-  border-bottom: 1px solid color-mix(in srgb, var(--color-background-dark) 8%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
 }
 
 .text-down {
@@ -93,6 +95,7 @@
 
 .hover:hover {
   opacity: var(--color-hover-opacity);
+  cursor: pointer;
 }
 
 .container {
