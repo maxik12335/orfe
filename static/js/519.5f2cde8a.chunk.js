@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkorfe=self.webpackChunkorfe||[]).push([[519],{519(e,s,a){a.r(s);var c=a(579);const n=()=>(0,c.jsx)("div",{className:"section line-dark",children:(0,c.jsx)("div",{className:"container",children:(0,c.jsx)("div",{className:"content",children:(0,c.jsx)("h2",{className:"h2 line-dark-text",children:"\u043e\u0431\u043e \u043c\u043d\u0435"})})})});a.d(s,["default",0,n])}}]);
+//# sourceMappingURL=519.5f2cde8a.chunk.js.map
